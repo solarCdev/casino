@@ -98,6 +98,12 @@ info.addEventListener("submit", (event) => {
     clsBtn.style.display = "block";
     money -= bet;
     nowMoney.innerHTML = money;
+    if (!money) {
+      const reload = window.confirm("돈이 없습니다. 게임을 재시작할까요?");
+      if (reload) {
+        window.location.reload();
+      }
+    }
   }, Number(rollInp.value) * 800);
 });
 
