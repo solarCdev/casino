@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;500;700;900&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="casino.css" />
+
+    <div class="bg-black" style="display: none">
+      <h3>어떤 숫자가 나올까요? 🤔</h3>
+      <div class="row">
+        <div class="wrap-slot"><span class="slot" id="f-value">0</span></div>
+        <div class="wrap-slot"><span class="slot" id="s-value">0</span></div>
+        <div class="wrap-slot"><span class="slot" id="t-value">0</span></div>
+      </div>
+      <span id="now">나의 배팅: <span id="now-value"></span></span>
+      <button class="cls-btn">닫기</button>
+    </div>
+
+    <div class="bg">
+      <nav><h1>Betting Game 🎲 🎰</h1></nav>
+      <div class="wrap-black">
+        <form id="info">
+          <h2>Let's Bet!</h2>
+          <span id="now-money"
+            >현재 보유 금액: <span id="now-money-value">10</span>$</span
+          >
+          <div class="wrap">
+            <label for="money">Money 🪙</label>
+            <span class="exp">배팅할 금액을 입력해주세요!</span>
+            <input
+              type="number"
+              placeholder="배팅할 금액을 입력해주세요!"
+              id="money"
+              value="0"
+            />
+          </div>
+          <div class="wrap">
+            <label for="num">Number 🎲</label>
+            <span class="exp">배팅할 1~7의 숫자를 3개 입력해주세요!</span>
+            <input
+              type="text"
+              placeholder="배팅할 번호를 입력해주세요! (3개 숫자, ex: 135)"
+              id="num"
+            />
+          </div>
+          <div class="wrap">
+            <label for="roll">Roll 🎰</label>
+            <span class="exp">슬롯머신을 몇 번 굴릴지 입력해주세요!</span>
+            <input
+              type="number"
+              placeholder="굴릴 횟수를 입력해주세요!"
+              id="roll"
+              value="1"
+            />
+          </div>
+          <input type="submit" value="배팅하기!" />
+        </form>
+      </div>
+    </div>
+    <script src="./casino.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: -2.5%;
+  padding: 0;
+  margin: 0;
+  color: white;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: 96px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.bg {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: url("./dice.jpg") center;
+  background-size: cover;
+}
+
+.wrap-black {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(48px);
+  width: 80%;
+  height: 80%;
+  margin-top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 36px;
+  border-radius: 12px;
+  border: solid 1px black;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+
+#now-money {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  height: 28px;
+}
+
+.exp {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+input {
+  margin-top: 8px;
+  width: 100%;
+  height: 44px;
+  border-radius: 12px;
+  padding: 12px;
+  border: none;
+  color: black;
+}
+
+.wrap {
+  margin-bottom: 16px;
+  width: 480px;
+}
+
+input::placeholder {
+  color: #5e5e5e;
+}
+
+input[type="submit"] {
+  background-color: #2d29f3;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h3 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(48px);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  padding: 96px;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap-slot {
+  background-color: white;
+  width: 384px;
+  height: 240px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 48px;
+  justify-content: center;
+}
+
+.slot {
+  font-size: 96px;
+  color: black;
+  font-weight: 900;
+}
+
+#now {
+  font-weight: 700;
+  font-size: 24px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.cls-btn {
+  width: 64px;
+  border: none;
+  border-radius: 12px;
+  height: 44px;
+  background-color: #2d29f3;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 24px;
+  display: none;
+}
