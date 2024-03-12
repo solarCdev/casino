@@ -80,18 +80,30 @@ info.addEventListener("submit", (event) => {
     }
 
     clsBtn.style.display = "block";
+    numbers[1].style.color = "red";
+    numbers[2].style.color = "red";
+    numbers[3].style.color = "red";
     money -= bet;
     nowMoney.innerHTML = money;
+  }, Number(rollInp.value) * 800);
+
+  setTimeout(() => {
     if (!money) {
       const reload = window.confirm("돈이 없습니다. 게임을 재시작할까요?");
       if (reload) {
         window.location.reload();
       }
     }
-  }, Number(rollInp.value) * 800);
+  }, Number(rollInp.value) * 800 + 10);
 });
 
 clsBtn.addEventListener("click", () => {
   rollingPage.style.display = "none";
   clsBtn.style.display = "none";
+  numbers[1].innerHTML = "0";
+  numbers[2].innerHTML = "0";
+  numbers[3].innerHTML = "0";
+  numbers[1].style.color = "black";
+  numbers[2].style.color = "black";
+  numbers[3].style.color = "black";
 });
