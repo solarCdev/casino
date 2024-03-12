@@ -49,9 +49,9 @@ info.addEventListener("submit", (event) => {
       numbers[3].innerHTML === numbers[1].innerHTML
     ) {
       if (numbers[1].innerHTML === "7") {
-        result.innerHTML = "777!!! x20배 🔥";
+        result.innerHTML = "777 JACKPOT!!! x20배 🔥";
       } else {
-        result.innerHTML = "트리플! x6배 🤑";
+        result.innerHTML = "JACKPOT! x6배 🤑";
         money += bet * 3;
       }
     } else if (
