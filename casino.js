@@ -50,9 +50,10 @@ info.addEventListener("submit", (event) => {
     ) {
       if (numbers[1].innerHTML === "7") {
         result.innerHTML = "777 JACKPOT!!! x20배 🔥";
+        money += bet * 20;
       } else {
         result.innerHTML = "JACKPOT! x6배 🤑";
-        money += bet * 3;
+        money += bet * 6;
       }
     } else if (
       numbers[1].innerHTML === numbers[2].innerHTML ||
@@ -67,13 +68,13 @@ info.addEventListener("submit", (event) => {
       numbers[3].innerHTML === "3"
     ) {
       result.innerHTML = "123 스트레이트! x9배 🪙";
-      money += bet * 0;
+      money += bet * 9;
     } else if (
       Number(numbers[2].innerHTML) === Number(numbers[1].innerHTML) + 1 &&
       Number(numbers[3].innerHTML) === Number(numbers[2].innerHTML) + 1
     ) {
       result.innerHTML = "스트레이트! x3배 🪙";
-      money += bet * 0;
+      money += bet * 3;
     } else {
       result.innerHTML = "배팅 실패... x0배 😭";
       money += bet * 0;
